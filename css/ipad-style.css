@@ -1,0 +1,203 @@
+/* under 768px (HEADER) */
+@media(max-width: 768px)
+{
+    .header 
+    {
+        height: 350px;
+        background-size: contain;
+    }
+    
+    #main-title
+    {
+        font-size: 30px;
+    }
+
+    #sub-title
+    {
+        font-size: 19px;
+    }
+
+    #button-title
+    {
+        font-size: 10px;
+        width: 130px;
+        height: 40px;
+    }
+}
+
+/* under 768px (ABOUT) */
+@media(max-width: 768px)
+{
+    #about-title
+    {
+        font-size: 28px;
+    }
+    
+    .about-para
+    {
+        font-size: 12px;
+    }
+    
+    #about-button-1
+    {
+        font-size: 14px;
+        width: 130px;
+        height: 35px;
+    }  
+}
+
+/* under 768px (PORTFOLIO) */
+@media(max-width: 768px)
+{
+    #portfolio-title
+    {
+        font-size: 28px;
+    }
+    
+    .portfolio .btn-area
+    {
+        width: 200px;
+        height: 44px;
+        font-size: 12px;
+        line-height: 45px;
+    } 
+}
+
+/* under 768px (SLIDER) */
+@media(max-width: 768px)
+{
+    .testimonies-title
+    {
+        font-size: 28px;
+    }
+    
+    section .card
+    {
+        min-width: 49%;
+    }
+    
+    .card-header
+    {
+        font-size: 10px;
+    }
+
+    .card-text
+    {
+        font-size: 8px;
+    }
+}
+
+/* under 768px (CONTACT) */
+@media(max-width: 768px)
+{
+    #contact-title
+    {
+        font-size: 28px;
+    }
+    
+    .contact-form .row
+    {
+        grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+    }
+    
+    .txt-field, #phone
+    {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    #message
+    {
+        font-size: 12px;
+    }
+    
+    #form-text
+    {
+        font-size: 8px;
+        line-height: 15px;
+    }
+    
+    #form-btn
+    {
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    ::-webkit-input-placeholder /* google chrome */
+    {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    ::-moz-input-placeholder /* firefox */
+    {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    ::-ms-input-placeholder /* internet explorer */
+    {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+/* under 768px (FOOTER) */
+@media(max-width: 768px)
+{
+    .footer
+    {
+        height: 520px;
+    }
+    
+    .caption figcaption a
+    {
+        font-size: 10px;
+    }
+    
+    .footer-h2
+    {
+        font-size: 16px;
+    }
+
+    .footer-p
+    {
+        font-size: 12px;
+    }
+
+    #email-footer
+    {
+        width: 180px;
+        height: 40px;
+        font-size: 12px;
+        margin-right: 1px;
+        padding-left: 5px;
+    }
+    
+    #email-footer::-webkit-input-placeholder
+    {
+        font-size: 12px;
+    }
+
+    #email-footer::-moz-input-placeholder /* firefox */
+    {
+        font-size: 12px;
+    }
+
+    #email-footer::-ms-input-placeholder /* internet explorer */
+    {
+        font-size: 12px;
+    }
+    
+    #button-footer
+    {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    #grid-border-1
+    {
+      left: 38%;
+    }
+}

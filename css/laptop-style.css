@@ -1,0 +1,30 @@
+/* under 1280px (SLIDER) */
+@media(max-width: 1280px)
+{
+    .card-container
+    {
+        width: 90%;
+    }
+    section .card
+    {
+        min-width: 33%;
+    }
+}
+
+/* under 1280px (CONTACT) */
+@media(max-width: 1280px)
+{
+    .contact-form .row
+    {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+/* under 1280px (FOOTER) */
+@media(max-width: 1280px)
+{
+    #grid-border-1
+    {
+      left: 47%;
+    }
+}

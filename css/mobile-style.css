@@ -1,0 +1,487 @@
+/* anything under 325px (HEADER) */
+@media screen and (max-width: 325px)
+{  
+    .header 
+    {
+        height: 245px;
+        background-image: url(../img/BANNER%20-%20IMAGE%20-%20MOBILE.png);
+    }
+    
+    .hamburger
+    {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2)
+    {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1)
+    {
+        transform: translateY(8px) rotate(45deg)
+    }
+    
+    .hamburger.active .bar:nth-child(3)
+    {
+        transform: translateY(-8px) rotate(-45deg)
+    }
+    
+    .top-menu
+    {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    .top-menu ul li
+    {
+        margin: 10px 0;
+    }
+    
+    .top-menu.active
+    {
+        left: 0;
+    }
+    
+    .title-area
+    {
+        position: absolute;
+        top: 60px;
+        left: 55px;
+        float: none;
+    }
+
+    #main-title
+    {
+        font-size: 25px;
+    }
+
+    #sub-title
+    {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    #button-title
+    {
+        position: relative;
+        left: 57px;
+        top: 65px;
+        font-size: 9px;
+        width: 100px;
+        height: 30px;
+        letter-spacing: 0;
+    }
+}
+
+/* anything under 325px (ABOUT) */
+@media screen and (max-width: 325px)
+{
+    .about
+    {
+        width: 100%;
+    }
+
+    #about-title
+    {
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .about-grid
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .about-grid a
+    {
+        overflow: hidden;
+    }
+    
+    .about-grid a:nth-child(1n + 4)
+    {
+        max-height: 0;
+        opacity: 0;
+        transition: 0.2s ease-in;
+    }
+    
+    .about .btn-area
+    {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: normal;
+        color: black;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        line-height: 56px;
+    }
+    
+    .about .btn-area .btnMore
+    {
+        display: block;
+    }
+
+    .about .btn-area .btnLess
+    {
+        display: none;
+    }
+    
+    .about #btnBoxAbout
+    {
+        display: none;
+    }
+    
+    .about #btnBoxAbout:checked~.about-grid a:nth-child(1n + 2)
+    {
+        max-height: 1000px;
+        opacity: 1;
+        transition: 0.5s ease;
+    }
+
+    .about #btnBoxAbout:checked~.btn-area .btnLess
+    {
+        display: block;
+    }
+
+    .about #btnBoxAbout:checked~.btn-area .btnMore
+    {
+        display: none;
+    }
+    
+    .about-para
+    {
+        font-size: 12px;
+        line-height: 25px;
+        text-align: left;
+    }
+    
+    #para1
+    {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 0;
+    }
+
+    #para2
+    {
+        padding-right: 0;
+        padding-top: 0;
+        padding-left: 10px;
+    }
+    
+    #about-button
+    {
+        display: none;
+    }
+    
+    #about-picture-1
+    {
+        display: none;
+    }
+    
+    #about-picture-1-mobile
+    {
+        display: block;
+    }
+    
+    #about-picture-2
+    {
+        display: none;
+    }
+    
+    #about-picture-2-mobile
+    {
+        display: block;
+        margin-top: 20px;
+    }
+    
+    .about .btn-area
+    {
+        display: block;
+    }
+}
+
+/* anything under 325px (PORTFOLIO) */
+@media screen and (max-width: 325px)
+{
+    .portfolio
+    {
+        margin-bottom: 30px;
+    }
+    
+    #portfolio-title
+    {
+        font-size: 22px;
+    }
+
+    .portfolio-image-grid a:nth-child(1n + 5)
+    {
+        max-height: 0;
+        opacity: 0;
+        transition: 0.2s ease-in;
+    }
+
+    .portfolio-image-grid .p-img
+    {
+        width: 142px;
+        height: 95px;
+        margin: 8px;
+    }
+}
+
+/* anything under 325px (SLIDER) */
+@media(max-width: 325px)
+{
+    .testimonies
+    {
+        width: 100%;
+    }
+    
+    .testimonies-title
+    {
+        font-size: 22px;
+    }
+    
+    .card-container
+    {
+        width: 70%;
+    }
+
+    section .card
+    {
+        min-width: 100%;
+    }
+    
+    section .card-image img
+    {
+        width: 53px;
+        height: 53px;
+    }
+    
+    section .card-info
+    {
+        line-height: 14px;
+    }
+
+    section .card-header
+    {
+        font-size: 9px;
+    }
+
+    section .card-text
+    {
+        font-size: 7px;
+    }
+}
+
+/* anything under 325px (CONTACT) */
+@media screen and (max-width: 325px)
+{
+    .contact
+    {
+        width: 70%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    #contact-title
+    {
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-form .row
+    {
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+        grid-gap: 0;
+        margin-bottom: 0;
+    }
+    
+    .contact-form input, #message
+    {
+        margin-top: 5px;
+    }
+    
+    .contact-form #form-text, #form-btn
+    {
+       margin-top: 5px;
+    }
+    
+    .txt-field
+    {
+        height: 34px;
+        font-family: Roboto;
+        font-size: 15px;
+    }
+
+    #phone
+    {
+        height: 34px;
+    }
+    
+    #form-text
+    {
+        font-size: 8px;
+        text-align: center;
+    }
+    
+    #form-btn
+    {
+        height: 34px;
+    }
+}
+
+/* anything under 325px (FOOTER) */
+@media screen and (max-width: 325px)
+{   
+    .footer
+    {
+        height: 615px;
+    }
+    
+    .grid-container
+    {
+        width: 90%;
+        height: 90%;
+        top: 2%;
+    }
+    
+    .item1
+    {
+        grid-row: 2;
+        text-align: center;
+    }
+    
+    .item2
+    {
+        grid-row: 3;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .item2 figure
+    {
+        margin: 5px;
+    }
+    
+    .item2 figure img
+    {
+        width: 89px;
+        height: 89px;
+    }
+    
+    .item2 .caption
+    {
+        width: 89px;
+    }
+
+    .item3
+    {
+        grid-column: 1;
+        grid-row: 4;
+        text-align: center;
+    }
+
+    .item4
+    {
+        grid-column: 1;
+        grid-row: 5;
+        text-align: center;
+    }
+
+    .item5
+    {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 15px;
+    }
+    
+    .footer-h2
+    {
+        font-size: 14px;
+    }
+    
+    #email-footer
+    {
+        width: 175px;
+        height: 35px;
+    }
+
+    #button-footer
+    {
+        width: 80px;
+        height: 35px;
+        font-size: 11px;
+    }
+    
+    #footer-newsletter
+    {
+        display: none;
+    }
+    
+    #footer-novidades
+    {
+        line-height: 30px;
+        display: flex;
+    }
+    
+    #grid-border-1
+    {
+        position: absolute;
+        top: 94%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: white;
+    }    
+    
+    #grid-border-2
+    {
+        display: flex;
+        position: absolute;
+        top: 87.5%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: white;
+    }
+    
+    .footer-p
+    {
+        display: none;
+    }
+    
+    .about-arr
+    {
+        border: solid black;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+    
+    .down 
+    {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+    
+    .foot-arr
+    {
+        border: solid white;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+}

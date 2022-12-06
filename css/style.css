@@ -1,0 +1,972 @@
+/*
+    Common CSS
+*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face 
+{
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face 
+{
+  font-family: Myriad-Pro-regular;
+  src: url(../fonts/MYRIADPRO-REGULAR.otf);
+}
+
+@font-face 
+{
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+/*
+    Header Area
+*/
+
+.header 
+{
+    position: relative;
+    width: 100%;
+    height: 526px;
+    background-image: url(../img/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-area 
+{
+    position: relative;
+    top: 1.2vw;
+    left: 3.55vw;
+    float: left
+}
+
+.logo-area img
+{
+    width: 100%;
+    height: auto;
+}
+
+.top-menu 
+{
+    position: relative;
+    top: 1.2vw;
+    right: 3.55vw;
+    float: right;
+}
+
+.top-menu ul
+{
+    list-style: none;
+    text-align: right;
+}
+
+.top-menu ul li
+{
+    display: inline-block;
+    margin: 8px
+}
+
+.top-menu ul li input
+{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    background: white;
+    width: 4px;
+    height: 4px;
+    padding: 8px;
+    border-radius: 30px;
+    border: none;
+    color: black;
+    cursor: default;
+    outline: none;
+    background: transparent;
+    box-sizing: content-box;
+}
+
+.top-menu ul li input::placeholder
+{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.top-menu ul li img
+{
+    position: absolute;
+    margin: -2px 0 0 -30px;
+    cursor: pointer;
+}
+
+.top-menu ul li a
+{
+    color: #172129;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.top-menu ul li a:hover
+{
+    color: #26b522;
+    transition: 0.3s ease-out;
+}
+
+.hamburger
+{
+    position: absolute;
+    top: 0.25vw;
+    right: 0.65vw;
+    display: none;
+    cursor: pointer;
+    float: right;
+}
+
+.hamburger .bar
+{
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+/*
+    Banner Area
+*/
+
+.title-area
+{
+    position: absolute;
+    top: 7.65vw;
+    left: 3.55vw;
+    float: left;
+}
+
+#main-title
+{
+    font-family: Roboto;
+    font-size: 44px;
+    font-weight: normal;
+    color: #3b3b3b;
+    letter-spacing: 2px;
+}
+
+#sub-title
+{
+    margin: 10px 0;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: normal;
+    color: #676767;
+    letter-spacing: 2px;
+}
+
+#button-title
+{
+    font-family: Roboto;
+    font-size: 15.5px;
+    font-weight: normal;
+    color: white;
+    background-color: #26b522;
+    border: none;
+    text-align: center;
+    width: 168px;
+    height: 51px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+#button-title:hover
+{
+    background: transparent;
+    color: #26b522;
+    border: 1px solid #000000; 
+}
+
+/*
+    About Area
+*/
+
+.about
+{
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#about-title
+{
+    margin: 20px auto;
+    font-family: OpenSans-Regular;
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    color: #172129;
+    margin-bottom: 30px;
+}
+
+.about-grid
+{
+    display: block;
+}
+
+.about-grid #test
+{
+    width: 100%;
+    min-height: 341px;
+}
+
+.about-grid #test2
+{
+    width: 100%;
+    min-height: 256px;
+}
+
+#about-picture-1
+{
+    float: left;
+}
+
+#about-picture-2
+{
+    float: right;
+}
+
+.about-para
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    color: #172129;
+    line-height: 35px;
+    text-align: left;
+}
+
+#about-picture-1
+{
+    margin-right: 20px;
+}
+
+#about-button-1
+{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    background-color: #587292;
+    border: none;
+    text-align: center;
+    width: 163px;
+    height: 44px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+#about-button-1:hover
+{
+    background: white;
+    color: #587292;
+    border: 1px solid #000000; 
+}
+
+#about-picture-1-mobile
+{
+    display: none;
+}
+
+#about-picture-2-mobile
+{
+    display: none;
+}
+
+.about #btnBoxAbout
+{
+    display: none;
+}
+
+.btn-area
+{
+    display: none;
+}
+
+/*
+    Portfolio Area
+*/
+
+.portfolio
+{
+    position: relative;
+    margin-bottom: 90px;
+}
+
+#portfolio-title
+{
+    font-family: OpenSans-Regular;
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    color: #172129;
+    margin-bottom: 30px;
+}
+
+.portfolio-image-grid
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-image-grid a:nth-child(1n + 7)
+{
+    max-height: 0;
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+
+.portfolio-image-grid .p-img
+{
+    width: 295px;
+    height: 195px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.portfolio-image-grid .p-img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-image-grid .p-img:hover img
+{
+    transform: scale(1.1);
+}
+
+.portfolio .btn-area
+{
+    display: block;
+    width: 238px;
+    height: 56px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    background-color: #587292;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    line-height: 56px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.portfolio .btn-area .btnMore
+{
+    display: block;
+}
+
+.portfolio .btn-area .btnLess
+{
+    display: none;
+}
+
+.portfolio #btnBoxGallery
+{
+    display: none;
+}
+
+.portfolio #btnBoxGallery:checked~.portfolio-image-grid a:nth-child(1n + 4)
+{
+    max-height: 1000px;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.portfolio #btnBoxGallery:checked~.btn-area .btnLess
+{
+    display: block;
+}
+
+.portfolio #btnBoxGallery:checked~.btn-area .btnMore
+{
+    display: none;
+}
+
+.btn-area span:hover
+{
+    background: white;
+    color: #587292;
+    border: 1px solid #000000; 
+}
+
+/* 
+    Testimonies Area
+*/
+
+.testimonies
+{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonies-title
+{
+    font-family: OpenSans-Regular;
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    color: #172129;
+    margin-bottom: 25px;
+}
+
+.card-container
+{
+    width: 96%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.card-container::-webkit-scrollbar
+{
+    display: none;
+}
+
+section .card
+{
+    min-width: 24%;
+    height: 90%;
+    margin: 0 20px 0 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+}
+
+section .card-stars
+{
+    width: 16%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #f2d344;
+}
+
+section .card-image
+{
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    margin-right: 10px;
+    float: left;
+}
+
+section .card-image img
+{
+    width: 100%;
+}
+
+section .card-info
+{
+    line-height: 20px;
+    margin: 0;
+}
+
+section .card-header
+{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+section .card-text
+{
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.testimonies p span
+{
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #555;
+    width: 20px;
+    height: 30px;
+    display: inline-block;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    background: transparent;
+}
+
+#left-arrow, #right-arrow
+{
+    top: 65%;
+}
+
+#left-arrow
+{
+    left: 0;
+}
+
+#right-arrow
+{
+    right: 0;
+}
+
+.testimonies p span:hover
+{
+    background: #222;
+    color: white;
+}
+
+/*
+    Contact Area
+*/
+
+.contact
+{
+    width: 70%;
+    min-width: 275px;
+    padding: 35px 50px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.contact-form
+{
+    width: 100%;
+    position: relative;
+}
+
+#contact-title
+{
+    font-family: OpenSans-Regular;
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    color: #172129;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.contact-form .row
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+}
+
+.contact-form input, #message
+{
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.contact-form #form-text, #form-btn
+{
+   margin-top: 25px;
+}
+
+.txt-field
+{
+    height: 45px;
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+#message
+{
+    height: 120px;
+    font-family: Roboto;
+    font-size: 15px;
+    resize: none;
+}
+
+#phone
+{
+    height: 45px;
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+#form-text
+{
+    width: 100%;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+#btn-here
+{
+    text-decoration: none;
+    color: #6388a8;
+}
+
+#form-btn
+{
+    width: 100%;
+    height: 45px;
+    background-color: #26b522;
+    border: 1px solid #000000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+#form-btn:hover
+{
+    background: #ffffff;
+    color: #26b522;
+}
+
+.contact-form input:hover, textarea:hover
+{
+    outline: 1.5px solid black;
+}
+
+.contact-form input:focus, textarea:focus
+{
+    outline: 1.5px solid black;
+}
+
+::-webkit-input-placeholder /* google chrome */
+{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    color: gray;
+    padding: 10px;
+}
+
+::-moz-input-placeholder /* firefox */
+{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    color: gray;
+    padding: 10px;
+}
+
+::-ms-input-placeholder /* internet explorer */
+{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    color: gray;
+    padding: 10px;
+}
+
+input:focus::placeholder 
+{
+  color: transparent;
+}
+
+textarea:focus::placeholder 
+{
+  color: transparent;
+}
+
+/*
+    Footer Area
+*/
+
+.footer
+{
+    width: 100%;
+    height: 400px;
+    background-color: #333333;
+    color: white;
+    display: grid;
+    align-items: center;
+}
+
+.grid-container
+{
+    width: 90%;
+    height: 90%;
+    position: relative;
+    display: grid;
+    grid-template-columns:  repeat(4, auto);
+    border: 3px solid white;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.item1
+{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+}
+
+.item1 h2
+{
+    margin-bottom: 15px;
+}
+
+.item2
+{
+    grid-column: 1;
+    grid-row: 2;
+    text-align: left;
+}
+
+.item2 h2
+{
+    margin: 15px auto;
+}
+
+.item2 .caption
+{
+    display: inline-grid;
+    width: 100px;
+}
+
+.caption figcaption
+{
+    background: #3b3b3b;
+    text-align: center;
+}
+
+.caption figcaption a
+{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+}
+
+.caption figcaption a:hover
+{
+    color: #26b522;
+    transition: 0.3s ease-out;
+}
+
+.item3
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.item3 h2
+{
+    margin-bottom: 20px;
+}
+
+.item3 a
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.item3 a:hover
+{
+    color: #26b522;
+    transition: 0.3s ease-out;
+}
+
+.item3 li
+{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.item4
+{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.item4 h2
+{
+    margin-bottom: 20px;
+}
+
+.item4 a
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.item4 a:hover
+{
+    color: #26b522;
+    transition: 0.3s ease-out;
+}
+
+.item4 li
+{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.item5
+{
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+    align-self:center;
+}
+
+.footer-h2
+{
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#email-footer
+{
+    width: 312px;
+    height: 45px;
+    float: left;
+    background-color: white;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    color: black;
+    border: none;
+    margin-right: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#email-footer:hover
+{
+    outline: 2px solid black;
+}
+
+#email-footer:focus::placeholder 
+{
+  color: transparent;
+}
+
+#email-footer:focus
+{
+    outline: 2px solid black;
+}
+
+#email-footer::-webkit-input-placeholder
+{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    color: gray;
+}
+
+#email-footer::-moz-input-placeholder /* firefox */
+{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    color: gray;
+}
+
+#email-footer::-ms-input-placeholder /* internet explorer */
+{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    color: gray;
+}
+
+#button-footer
+{
+    width: 186px;
+    height: 45px;
+    background-color: #26b522;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    border: none;
+    background-color: #26b522;
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#button-footer:hover
+{
+    background: transparent;
+    color: #26b522;
+    border: 1px solid white;
+}
+
+#footer-novidades
+{
+    display: none;
+}
+
+#grid-border-1
+{
+  position: absolute;
+  left: 35%;
+  width: 2px;
+  height: 100%;
+  background: white;
+}
+
+#grid-border-2
+{
+    display: none;
+}
